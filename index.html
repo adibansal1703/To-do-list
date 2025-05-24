@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background">
+        <h1>To do List</h1>
+    </div>
+    <div class="front">
+        <div class="front-head">
+            <label for="needs">
+                <input type="text" id="needs" class="needs" placeholder="What do you need to do?" required />
+            </label>
+            <button id="add-btn" class="add-btn btn" onclick="addTask()">Add</button>
+        </div>
+        <div class="front-foot">
+            <button id="all-btn" class="all-btn btn" onclick="showTask()">All</button>
+            <button id="active-btn" class="active-btn btn" onclick="showUnDoneTask()">Active</button>
+            <button id="completed-btn" class="completed-btn btn" onclick="showDoneTask()">Completed</button>
+            <button id="clear-btn" class="clear-btn btn" onclick="clearCompleted()">Clear Completed</button>
+        </div>
+        <div>
+            <ul type="circle" id="taskShow">
+
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
